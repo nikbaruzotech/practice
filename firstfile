@@ -1,0 +1,72 @@
+function add(user) {
+  arr.push(user);
+}
+
+const arr = [];
+add({
+  name: "NIKHIL",
+  email: "nikhil@baruzotech.com",
+  maths_marks: 70,
+  physics_marks: 76,
+  chemistry_marks: 94,
+});
+//console.log(arr);
+add({
+  name: "Dharmik",
+  email: "dharmik@baruzotech.com",
+  maths_marks: 40,
+  physics_marks: 76,
+  chemistry_marks: 89,
+});
+//console.log(arr);
+add({
+  name: "NIK",
+  email: "nik@baruzotech.com",
+  maths_marks: 45,
+  physics_marks: 56,
+  chemistry_marks: 85,
+});
+
+const a = arr.map((item) => {
+  const merit =
+    (item.maths_marks + item.physics_marks + item.chemistry_marks) / 3;
+  return { name: item.name, merit: merit };
+});
+//console.log(a);
+
+function studentsort(a, b) {
+  if (a.merit > b.merit) {
+    return -1;
+  }
+  if (a.merit < b.merit) {
+    return 1;
+  } else return 0;
+}
+
+a.sort(studentsort);
+console.log(a);
+
+
+function maximum(b){
+  if(b.merit>70){
+    return true;
+  }
+  else
+    return false;
+
+}
+
+const x= a.filter(maximum);
+console.log(x);
+// function maximum(i){
+//   if (i > a) {
+//     a = i;
+//   }
+//   return i == a;
+// }
+
+// a.filter(maximum);
+// console.log(a);
+
+
+// 
