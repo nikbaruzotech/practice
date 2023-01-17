@@ -27,6 +27,14 @@ add({
   chemistry_marks: 85,
 });
 
+add({
+  name: "Niiiiiik",
+  email: "niiiiiik@baruzotech.com",
+  maths_marks: 45,
+  physics_marks: 59,
+  chemistry_marks: 55,
+});
+
 const a = arr.map((item) => {
   const merit =
     (item.maths_marks + item.physics_marks + item.chemistry_marks) / 3;
