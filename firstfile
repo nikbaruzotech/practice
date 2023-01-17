@@ -22,9 +22,7 @@ add({
 add({
   name: "NIK",
   email: "nik@baruzotech.com",
-  maths_marks: 45,
-  physics_marks: 56,
-  chemistry_marks: 85,
+  maths_marks: 45
   merit_marks: 63,
   grade: CC
 });
